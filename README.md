@@ -6,7 +6,7 @@ Generate an http4s service on the blaze backend with Circe.
 2. `sbt new pawel-szafran/http4s.g8`
 3. `cd quickstart`
 4. `sbt run`
-5. `curl http://localhost:8080/hello/$USER`
+5. `http :8080/hello name=Batman`
 6. [Learn more](http://http4s.org/)
 
 
