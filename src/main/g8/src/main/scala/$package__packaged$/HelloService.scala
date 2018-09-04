@@ -10,7 +10,7 @@ object HelloService extends Http4sDsl[IO] {
       case req @ POST -> Root =>
         for {
           user <- req.as[User]
-          resp <- Ok(Greeting(s"Hello, ${user.name}!").asJson)
+          resp <- Ok(Greeting(s"Hello, \${user.name}!").asJson)
         } yield resp
     }
   }
